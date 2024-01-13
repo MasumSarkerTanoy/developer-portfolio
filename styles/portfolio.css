@@ -13,12 +13,15 @@ html{
     list-style-type: none;
     font-size: 1.6rem;
 }
+p{
+    font-size: 1.8rem;
+}
 .button{
     background-color:#FD6E0A;
     border: none;
     border-radius: 0.5rem;
-    width: 10rem;
-    height: 3.5rem;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
     color: white;
     font-weight:700;
 }
@@ -29,8 +32,8 @@ header{
     width: 100%;
     background-image: url("../images/developer.png"), url("../images/header_bg.png");
     background-repeat: no-repeat;
-    background-size: 10rem 100%, 60rem 35rem;
-    background-position: top left, bottom right;
+    background-size: 10rem 100%, 50rem 32rem;
+    background-position: 3rem 0rem, bottom right;
     padding-top: 5rem;
 }
 /* Navigation bar */
@@ -54,9 +57,41 @@ nav h1 span{
 nav ul{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 nav ul li{
     color:rgba(0,0,0,.5);
+    font-size: 1.8rem;
+}
+/* header banner section */
+#banner{
+    /* margin-left: 15%; unexpected behavior*/
+    padding: 3rem 2rem 0rem 12.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content{
+    padding-top: 10rem;
+}
+/* Header section image */
+.image{
+    width: 30%;
+}
+/* banner content */
+#greeting{
+    font-size: 4rem;
+}
+#title{
+    font-size: 8rem;
+    margin: 2rem 0rem;
+}
+#description{
+    margin-bottom: 2rem;
+}
+#sec-button{
+    background-color: aliceblue;
+    color: orange;
+    border: 1px solid red;
+    margin-left: 2rem;
 }
 
