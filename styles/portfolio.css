@@ -27,7 +27,7 @@ p{
 }
 
 /* header part */
-header{
+#header{
     background: #FFF8F3;
     width: 100%;
     background-image: url("../images/developer.png"), url("../images/header_bg.png");
@@ -46,12 +46,12 @@ nav{
 }
 nav>h1{
     color:#181818;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 1200;
 }
 nav h1 span{
     color: #FD6E0A;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 1200;
 }
 nav ul{
@@ -95,3 +95,75 @@ nav ul li{
     margin-left: 2rem;
 }
 
+
+
+/* media query */
+@media screen and (max-width:572px){
+    .button{
+        background-color:#FD6E0A;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        color: white;
+        font-weight:700;
+    }
+    /* header part */
+    #header{
+    background: #FFF8F3;
+    width: 100%;
+    padding-top: 5rem;
+}
+/* Navigation bar */
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+}
+nav>h1{
+   display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* header banner section */
+#banner{
+    /* margin-left: 15%; unexpected behavior*/
+    padding: 3rem 2rem 0rem 12.5%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.image{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.banner-content{
+    padding-top: 1.5rem;
+}
+#greeting{
+    font-size: 2.2rem;
+}
+#title{
+    font-size: 4rem;
+    margin: 2rem 0rem;
+}
+#description{
+    margin-bottom: 1.6rem;
+}
+}
+
+/* 572-620 */
+@media screen and (min-width:572px) and (max-width:820px){
+    .button{
+        background-color:#FD6E0A;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        color: white;
+        font-weight:700;
+    }
+}
